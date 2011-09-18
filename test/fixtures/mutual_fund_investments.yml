@@ -1,0 +1,41 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+elss_purchase:
+  id: 1
+  mutual_fund_id: 1
+  units: 50
+  buying_price: 34.256
+  buying_value: 1712.8
+  purchase_date: 2005-10-01
+  current_value: 2000
+principal_purchase:
+  id: 2
+  mutual_fund_id: 1
+  units: 500
+  buying_price: 24.256
+  buying_value: 17000
+  purchase_date: 2007-10-01
+  current_value: 9000
+debt_purchase:
+  id: 3
+  mutual_fund_id: 2
+  units: 1000
+  buying_price: 14.256
+  buying_value: 14000
+  purchase_date: 2007-06-01
+  current_value: 15020
+gilt_purchase:
+  id: 4
+  mutual_fund_id: 3
+  units: 100
+  buying_price: 21.256
+  buying_value: 21300
+  purchase_date: 2006-06-01
+  current_value: 25124.456
+liquid_purchase:
+  id: 5
+  mutual_fund_id: 4
+  units: 100
+  buying_price: 45.67
+  buying_value: 46000
+  purchase_date: 2007-06-01
+  current_value: 50100

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+elss_dividend1:
+  id: 1
+  mutual_fund_investment_id: 1
+  value: 21.24
+  date: 2006-10-23
+elss_dividend2:
+  id: 2
+  mutual_fund_investment_id: 1
+  value: 73.24
+  date: 2007-05-01

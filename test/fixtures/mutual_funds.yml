@@ -1,0 +1,32 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+franklin_templeton:
+  id: 1
+  amfi_symbol: 100557
+  fund_type: ELSS
+  name: Franklin Templeton Tax Shield
+  nav: 36.45
+birla:
+  id: 2
+  amfi_symbol: 100123
+  fund_type: Debt
+  name: Birla Short Term
+  nav: 17.45
+icici_prudential:
+  id: 3
+  amfi_symbol: 110123
+  fund_type: Gilt
+  name: ICICI Prudential Gilt Fund
+  nav: 25.43
+dsp_tiger:
+  id: 4
+  amfi_symbol: 112123
+  fund_type: Liquid
+  name: DSP Merryl Lynch T.I.G.E.R
+  nav: 56.12
+sip:
+  id: 5
+  amfi_symbol: 112623
+  fund_type: Liquid
+  name: HDFC Prudence
+  nav: 32.17
+

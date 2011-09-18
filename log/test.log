@@ -1,0 +1,13 @@
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mMutualFund Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+  [4;35;1mSQL (0.015000)[0m   [0mINSERT INTO mutual_funds (`name`, `fund_type`) VALUES('Test', '')[0m
+  [4;36;1mSQL (0.062000)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mMutualFund Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mMutualFund Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+  [4;35;1mSQL (0.016000)[0m   [0mROLLBACK[0m

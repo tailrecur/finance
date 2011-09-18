@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+house_deposit:
+  id: 1
+  name: House Deposit
+  value: 12000
+ulip:
+  id: 2
+  name: ULIP
+  value: 21456

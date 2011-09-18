@@ -1,0 +1,1292 @@
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.344000)[0m   [0mCREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.031000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.156000)[0m   [0;1mCREATE TABLE fixed_deposits (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.063000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.500000)[0m   [0mSHOW KEYS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE fixed_deposits[0m
+  [4;35;1mSQL (0.031000)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.078000)[0m   [0;1mCREATE TABLE fixed_deposits (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank` varchar(255) NOT NULL, `amount` decimal(8,2) NOT NULL, `interest_rate` decimal(4,2) NOT NULL, `tenure` int(11) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.062000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.453000)[0m   [0mSHOW KEYS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.031000)[0m   [0;1mDROP TABLE fixed_deposits[0m
+  [4;35;1mSQL (0.047000)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.125000)[0m   [0;1mCREATE TABLE fixed_deposits (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank` varchar(255) NOT NULL, `amount` decimal(8,2) NOT NULL, `interest_rate` decimal(4,2) NOT NULL, `tenure` int(11) NOT NULL, `start_date` date NOT NULL, `end_date` date NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.031000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.438000)[0m   [0mSHOW KEYS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFixedDeposit Columns (0.016000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.047000)[0m   [0;1mDROP TABLE fixed_deposits[0m
+  [4;35;1mSQL (0.062000)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.094000)[0m   [0;1mCREATE TABLE fixed_deposits (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank` varchar(255) NOT NULL, `amount` decimal(8,2) NOT NULL, `interest_rate` decimal(4,2) NOT NULL, `tenure` int(11) NOT NULL, `start_date` date NOT NULL, `maturity_date` date NOT NULL, `maturity_value` decimal(8,2) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.031000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.437000)[0m   [0mSHOW KEYS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFixedDeposit Columns (0.016000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-29 16:15:11) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/finance" with {:method=>:get}):
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-29 16:15:24) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/finance/fixed_deposit" with {:method=>:get}):
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing FixedDepositController#index (for 127.0.0.1 at 2007-09-29 16:15:36) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"fixed_deposit"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFixedDeposit Columns (0.000000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.063000)[0m   [0;1mSELECT count(*) AS count_all FROM fixed_deposits [0m
+  [4;35;1mFixedDeposit Load (0.000000)[0m   [0mSELECT * FROM fixed_deposits LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/fixed_deposit
+Rendering fixed_deposit/list
+Completed in 0.29700 (3 reqs/sec) | Rendering: 0.03100 (10%) | DB: 0.06300 (21%) | 200 OK [http://localhost/fixed_deposit]
+
+
+Processing FixedDepositController#new (for 127.0.0.1 at 2007-09-29 16:15:49) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"fixed_deposit"}
+  [4;36;1mFixedDeposit Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+Rendering  within layouts/fixed_deposit
+Rendering fixed_deposit/new
+Rendered fixed_deposit/_form (0.09400)
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.11000 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixed_deposit/new]
+
+
+Processing FixedDepositController#index (for 127.0.0.1 at 2007-09-29 16:33:18) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"fixed_deposit"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFixedDeposit Columns (0.000000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM fixed_deposits [0m
+  [4;35;1mFixedDeposit Load (0.000000)[0m   [0mSELECT * FROM fixed_deposits LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/fixed_deposit
+Rendering fixed_deposit/list
+Completed in 0.17200 (5 reqs/sec) | Rendering: 0.01600 (9%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixed_deposit/]
+
+
+Processing FixedDepositController#new (for 127.0.0.1 at 2007-09-29 16:33:41) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"fixed_deposit"}
+  [4;36;1mFixedDeposit Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+Rendering  within layouts/fixed_deposit
+Rendering fixed_deposit/new
+Rendered fixed_deposit/_form (0.01500)
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.04700 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixed_deposit/new]
+
+
+Processing FixedDepositController#create (for 127.0.0.1 at 2007-09-29 16:33:54) [POST]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"fixed_deposit", "fixed_deposit"=>{"tenure"=>"390", "start_date(1i)"=>"2007", "start_date(2i)"=>"9", "maturity_value"=>"", "interest_rate"=>"9.5", "start_date(3i)"=>"29", "maturity_date(1i)"=>"2007", "amount"=>"20000", "maturity_date(2i)"=>"9", "maturity_date(3i)"=>"29", "bank"=>"ICICI"}}
+  [4;35;1mFixedDeposit Columns (0.000000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #23000Column 'maturity_value' cannot be null: INSERT INTO fixed_deposits (`start_date`, `tenure`, `interest_rate`, `maturity_value`, `amount`, `bank`, `maturity_date`) VALUES('2007-09-29', 390, '9.5', NULL, '20000.0', 'ICICI', '2007-09-29')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: #23000Column 'maturity_value' cannot be null: INSERT INTO fixed_deposits (`start_date`, `tenure`, `interest_rate`, `maturity_value`, `amount`, `bank`, `maturity_date`) VALUES('2007-09-29', 390, '9.5', NULL, '20000.0', 'ICICI', '2007-09-29')):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract_adapter.rb:128:in `log'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:243:in `execute'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:253:in `insert'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1811:in `create_without_callbacks'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/callbacks.rb:254:in `create_without_timestamps'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/timestamp.rb:39:in `create'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1789:in `create_or_update_without_callbacks'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/callbacks.rb:242:in `create_or_update'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1545:in `save_without_validation'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/validations.rb:752:in `save_without_transactions'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:129:in `save'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/database_statements.rb:59:in `transaction'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:95:in `transaction'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:121:in `transaction'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:129:in `save'
+    /app/controllers/fixed_deposit_controller.rb:25:in `create'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing FixedDepositController#create (for 127.0.0.1 at 2007-09-29 16:34:44) [POST]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"fixed_deposit", "fixed_deposit"=>{"tenure"=>"390", "start_date(1i)"=>"2007", "start_date(2i)"=>"9", "maturity_value"=>"22006", "interest_rate"=>"9.5", "start_date(3i)"=>"24", "maturity_date(1i)"=>"2008", "amount"=>"20000", "maturity_date(2i)"=>"10", "maturity_date(3i)"=>"18", "bank"=>"ICICI"}}
+  [4;35;1mFixedDeposit Columns (0.015000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO fixed_deposits (`start_date`, `tenure`, `interest_rate`, `maturity_value`, `amount`, `bank`, `maturity_date`) VALUES('2007-09-24', 390, '9.5', '22006.0', '20000.0', 'ICICI', '2008-10-18')[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/fixed_deposit/list
+Completed in 0.06200 (16 reqs/sec) | DB: 0.06200 (100%) | 302 Found [http://localhost/fixed_deposit/create]
+
+
+Processing FixedDepositController#list (for 127.0.0.1 at 2007-09-29 16:34:45) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"fixed_deposit"}
+  [4;35;1mFixedDeposit Columns (0.015000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM fixed_deposits [0m
+  [4;35;1mFixedDeposit Load (0.000000)[0m   [0mSELECT * FROM fixed_deposits LIMIT 0, 10[0m
+Rendering  within layouts/fixed_deposit
+Rendering fixed_deposit/list
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (100%) | 200 OK [http://localhost/fixed_deposit/list]
+
+
+Processing FixedDepositController#show (for 127.0.0.1 at 2007-09-29 16:34:56) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"fixed_deposit"}
+  [4;36;1mFixedDeposit Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+  [4;35;1mFixedDeposit Load (0.032000)[0m   [0mSELECT * FROM fixed_deposits WHERE (fixed_deposits.`id` = 1) [0m
+Rendering  within layouts/fixed_deposit
+Rendering fixed_deposit/show
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.03100 (28%) | DB: 0.03200 (29%) | 200 OK [http://localhost/fixed_deposit/show/1]
+
+
+Processing FixedDepositController#list (for 127.0.0.1 at 2007-09-29 16:35:00) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"fixed_deposit"}
+  [4;36;1mFixedDeposit Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM fixed_deposits [0m
+  [4;36;1mFixedDeposit Load (0.000000)[0m   [0;1mSELECT * FROM fixed_deposits LIMIT 0, 10[0m
+Rendering  within layouts/fixed_deposit
+Rendering fixed_deposit/list
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.01600 (12%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixed_deposit/list]
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.031000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFunds (2)
+  [4;35;1mSQL (0.109000)[0m   [0mCREATE TABLE mutual_funds (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `type` varchar(255) NOT NULL, `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.063000)[0m   [0;1mUPDATE schema_info SET version = 2[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.437000)[0m   [0;1mSHOW KEYS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMutualFund Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+
+
+Processing MutualFundController#index (for 127.0.0.1 at 2007-09-29 16:49:43) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"mutual_fund"}
+  [4;35;1mMutualFund Columns (0.016000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM mutual_funds [0m
+  [4;35;1mMutualFund Load (0.000000)[0m   [0mSELECT * FROM mutual_funds LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/mutual_fund
+Rendering mutual_fund/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/mutual_fund]
+
+
+Processing MutualFundController#new (for 127.0.0.1 at 2007-09-29 16:49:46) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund"}
+  [4;36;1mMutualFund Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+Rendering  within layouts/mutual_fund
+Rendering mutual_fund/new
+Rendered mutual_fund/_form (0.01600)
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01500 (31%) | 200 OK [http://localhost/mutual_fund/new]
+
+
+Processing MutualFundController#list (for 127.0.0.1 at 2007-09-29 16:50:06) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund"}
+  [4;35;1mMutualFund Columns (0.016000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM mutual_funds [0m
+  [4;35;1mMutualFund Load (0.000000)[0m   [0mSELECT * FROM mutual_funds LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund
+Rendering mutual_fund/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.01600 (51%) | 200 OK [http://localhost/mutual_fund/list]
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFunds (2)
+  [4;36;1mSQL (0.031000)[0m   [0;1mDROP TABLE mutual_funds[0m
+  [4;35;1mSQL (0.031000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;35;1mSQL (0.031000)[0m   [0mDROP TABLE fixed_deposits[0m
+  [4;36;1mSQL (0.063000)[0m   [0;1mUPDATE schema_info SET version = 0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.078000)[0m   [0;1mCREATE TABLE fixed_deposits (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank` varchar(255) NOT NULL, `amount` decimal(8,2) NOT NULL, `interest_rate` decimal(4,2) NOT NULL, `tenure` int(11) NOT NULL, `start_date` date NOT NULL, `maturity_date` date NOT NULL, `maturity_value` decimal(8,2) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.078000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFunds (2)
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE mutual_funds (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fund_type` varchar(255) NOT NULL, `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mUPDATE schema_info SET version = 2[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.015000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMutualFund Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+
+
+Processing MutualFundController#list (for 127.0.0.1 at 2007-09-29 16:53:49) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund"}
+  [4;36;1mMutualFund Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM mutual_funds [0m
+  [4;36;1mMutualFund Load (0.000000)[0m   [0;1mSELECT * FROM mutual_funds LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund
+Rendering mutual_fund/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/mutual_fund/list]
+
+
+Processing FixedDepositController#index (for 127.0.0.1 at 2007-09-29 16:54:23) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"fixed_deposit"}
+  [4;35;1mFixedDeposit Columns (0.016000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM fixed_deposits [0m
+  [4;35;1mFixedDeposit Load (0.000000)[0m   [0mSELECT * FROM fixed_deposits LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/fixed_deposit
+Rendering fixed_deposit/list
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (100%) | 200 OK [http://localhost/fixed_deposit]
+
+
+Processing FixedDepositController#new (for 127.0.0.1 at 2007-09-29 16:58:31) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"fixed_deposit"}
+  [4;36;1mFixedDeposit Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+Rendering  within layouts/fixed_deposit
+Rendering fixed_deposit/new
+Rendered fixed_deposit/_form (0.00000)
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixed_deposit/new]
+
+
+Processing MutualFundController#index (for 127.0.0.1 at 2007-09-29 16:58:48) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"mutual_fund"}
+  [4;35;1mMutualFund Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSELECT count(*) AS count_all FROM mutual_funds [0m
+  [4;35;1mMutualFund Load (0.000000)[0m   [0mSELECT * FROM mutual_funds LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/mutual_fund
+Rendering mutual_fund/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/mutual_fund]
+
+
+Processing MutualFundController#new (for 127.0.0.1 at 2007-09-29 16:58:49) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund"}
+  [4;36;1mMutualFund Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+Rendering  within layouts/mutual_fund
+Rendering mutual_fund/new
+Rendered mutual_fund/_form (0.00000)
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/mutual_fund/new]
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSHOW KEYS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM mutual_funds[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mDROP DATABASE IF EXISTS `finance_test`[0m
+  [4;35;1mSQL (0.062000)[0m   [0mCREATE DATABASE `finance_test`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'fixed_deposits': DROP TABLE fixed_deposits[0m
+  [4;36;1mSQL (0.141000)[0m   [0;1mCREATE TABLE fixed_deposits (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank` varchar(255) DEFAULT '' NOT NULL, `amount` decimal(8,2) NOT NULL, `interest_rate` decimal(4,2) NOT NULL, `tenure` int(11) NOT NULL, `start_date` date NOT NULL, `maturity_date` date NOT NULL, `maturity_value` decimal(8,2) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S02Unknown table 'mutual_funds': DROP TABLE mutual_funds[0m
+  [4;36;1mSQL (0.125000)[0m   [0;1mCREATE TABLE mutual_funds (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fund_type` varchar(255) DEFAULT '' NOT NULL, `name` varchar(255) DEFAULT '' NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM schema_info[0m
+  [4;36;1mSQL (0.265000)[0m   [0;1mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFunds (2)
+  [4;35;1mSQL (0.094000)[0m   [0mDROP TABLE mutual_funds[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+Reached target version: 1
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFunds (2)
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE mutual_funds (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fund_type` varchar(255) NOT NULL, `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mUPDATE schema_info SET version = 2[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddMutualFunds (3)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddMutualFunds (3)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddMutualFunds (3)
+  [4;36;1mMutualFund Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO mutual_funds (`name`, `fund_type`) VALUES('Franklin Templeton Tax Shield', 'ELSS')[0m
+  [4;35;1mSQL (0.047000)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mUPDATE schema_info SET version = 3[0m
+  [4;35;1mSQL (0.016000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW KEYS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSHOW KEYS FROM mutual_funds[0m
+
+
+Processing MutualFundController#index (for 127.0.0.1 at 2007-09-29 17:39:17) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"mutual_fund"}
+  [4;35;1mMutualFund Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSELECT count(*) AS count_all FROM mutual_funds [0m
+  [4;35;1mMutualFund Load (0.000000)[0m   [0mSELECT * FROM mutual_funds LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/mutual_fund
+Rendering mutual_fund/list
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/mutual_fund/]
+
+
+Processing MutualFundController#new (for 127.0.0.1 at 2007-09-29 17:39:19) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund"}
+  [4;36;1mMutualFund Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+Rendering  within layouts/mutual_fund
+Rendering mutual_fund/new
+Rendered mutual_fund/_form (0.00000)
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.01600 (50%) | 200 OK [http://localhost/mutual_fund/new]
+
+
+Processing MutualFundController#create (for 127.0.0.1 at 2007-09-29 17:39:25) [POST]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"commit"=>"Create", "action"=>"create", "mutual_fund"=>{"name"=>"as", "fund_type"=>"as"}, "controller"=>"mutual_fund"}
+  [4;35;1mMutualFund Columns (0.016000)[0m   [0mSHOW FIELDS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/mutual_fund
+Rendering mutual_fund/new
+Rendered mutual_fund/_form (0.00000)
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.04700 (43%) | DB: 0.01600 (14%) | 200 OK [http://localhost/mutual_fund/create]
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to AddMutualFunds (3)
+  [4;35;1mSQL (0.046000)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFunds (2)
+  [4;35;1mSQL (0.063000)[0m   [0mDROP TABLE mutual_funds[0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.047000)[0m   [0;1mDROP TABLE fixed_deposits[0m
+  [4;35;1mSQL (0.031000)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFixedDeposits (1)
+  [4;36;1mSQL (0.109000)[0m   [0;1mCREATE TABLE fixed_deposits (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank` varchar(255) NOT NULL, `amount` decimal(10,2) NOT NULL, `interest_rate` decimal(4,2) NOT NULL, `tenure` int(11) NOT NULL, `start_date` date NOT NULL, `maturity_date` date NOT NULL, `maturity_value` decimal(10,2) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.032000)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFunds (2)
+  [4;35;1mSQL (0.109000)[0m   [0mCREATE TABLE mutual_funds (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `fund_type` varchar(255) NOT NULL, `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.062000)[0m   [0;1mUPDATE schema_info SET version = 2[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddMutualFunds (3)
+  [4;36;1mMutualFund Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO mutual_funds (`name`, `fund_type`) VALUES('Franklin Templeton Tax Shield', 'ELSS')[0m
+  [4;35;1mSQL (0.031000)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.047000)[0m   [0;1mUPDATE schema_info SET version = 3[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateMutualFundInvestments (4)
+  [4;36;1mSQL (0.063000)[0m   [0;1mCREATE TABLE mutual_fund_investments (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `mutual_fund_id` int(11) NOT NULL, `purchase_date` date NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.047000)[0m   [0mUPDATE schema_info SET version = 4[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW FIELDS FROM fixed_deposits[0m
+  [4;35;1mSQL (0.015000)[0m   [0mSHOW KEYS FROM fixed_deposits[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;35;1mSQL (0.516000)[0m   [0mSHOW KEYS FROM mutual_fund_investments[0m
+  [4;36;1mSQL (0.015000)[0m   [0;1mSHOW FIELDS FROM mutual_funds[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW KEYS FROM mutual_funds[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMutualFundInvestment Columns (0.015000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+
+
+Processing MutualFundInvestmentController#index (for 127.0.0.1 at 2007-09-29 17:54:23) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;36;1mMutualFundInvestment Load (0.000000)[0m   [0;1mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.01600 (51%) | 200 OK [http://localhost/mutual_fund_investment]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 17:54:26) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.015000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.01500 (48%) | 200 OK [http://localhost/mutual_fund_investment/new]
+
+
+Processing MutualFundInvestmentController#create (for 127.0.0.1 at 2007-09-29 17:54:33) [POST]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"commit"=>"Create", "mutual_fund_investment"=>{"purchase_date(2i)"=>"9", "purchase_date(3i)"=>"29", "purchase_date(1i)"=>"2007"}, "action"=>"create", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: #23000Column 'mutual_fund_id' cannot be null: INSERT INTO mutual_fund_investments (`mutual_fund_id`, `purchase_date`) VALUES(NULL, '2007-09-29')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: #23000Column 'mutual_fund_id' cannot be null: INSERT INTO mutual_fund_investments (`mutual_fund_id`, `purchase_date`) VALUES(NULL, '2007-09-29')):
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract_adapter.rb:128:in `log'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:243:in `execute'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/mysql_adapter.rb:253:in `insert'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1811:in `create_without_callbacks'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/callbacks.rb:254:in `create_without_timestamps'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/timestamp.rb:39:in `create'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1789:in `create_or_update_without_callbacks'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/callbacks.rb:242:in `create_or_update'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/base.rb:1545:in `save_without_validation'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/validations.rb:752:in `save_without_transactions'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:129:in `save'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/connection_adapters/abstract/database_statements.rb:59:in `transaction'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:95:in `transaction'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:121:in `transaction'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/transactions.rb:129:in `save'
+    /app/controllers/mutual_fund_investment_controller.rb:25:in `create'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mMutualFundInvestment Columns (0.016000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+
+
+Processing MutualFundInvestmentController#index (for 127.0.0.1 at 2007-09-29 17:58:59) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"index", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;36;1mMutualFundInvestment Load (0.000000)[0m   [0;1mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering actionlistlayoutfalse within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.07900 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01500 (18%) | 200 OK [http://localhost/mutual_fund_investment/]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 17:59:00) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.016000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (100%) | 200 OK [http://localhost/mutual_fund_investment/new]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:11:52) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/mutual_fund_investment/new]
+
+
+Processing MutualFundInvestmentController#list (for 127.0.0.1 at 2007-09-29 19:12:37) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;35;1mMutualFundInvestment Load (0.000000)[0m   [0mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (100%) | 200 OK [http://localhost/mutual_fund_investment/list]
+
+
+Processing MutualFundInvestmentController#list (for 127.0.0.1 at 2007-09-29 19:14:17) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;36;1mMutualFundInvestment Load (0.000000)[0m   [0;1mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.01500 (48%) | 200 OK [http://localhost/mutual_fund_investment/list]
+
+
+Processing MutualFundInvestmentController#list (for 127.0.0.1 at 2007-09-29 19:14:35) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;35;1mMutualFundInvestment Load (0.000000)[0m   [0mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/mutual_fund_investment/list]
+
+
+Processing MutualFundInvestmentController#list (for 127.0.0.1 at 2007-09-29 19:17:22) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;35;1mSQL (0.015000)[0m   [0mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;36;1mMutualFundInvestment Load (0.000000)[0m   [0;1mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.17200 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (8%) | 200 OK [http://localhost/mutual_fund_investment/list]
+
+
+Processing MutualFundInvestmentController#list (for 127.0.0.1 at 2007-09-29 19:17:57) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.015000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;35;1mMutualFundInvestment Load (0.000000)[0m   [0mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/mutual_fund_investment/list]
+
+
+Processing MutualFundInvestmentController#list (for 127.0.0.1 at 2007-09-29 19:18:01) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"list", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM mutual_fund_investments [0m
+  [4;36;1mMutualFundInvestment Load (0.000000)[0m   [0;1mSELECT * FROM mutual_fund_investments LIMIT 0, 10[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/list
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01500 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/mutual_fund_investment/list]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:18:55) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.016000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+
+
+ActionView::TemplateError (wrong number of arguments (0 for 3)) on line #5 of app/views/mutual_fund_investment/_form.rhtml:
+2: 
+3: <!--[form:mutual_fund_investment]-->
+4: <p><label for="mutual_fund_investment_purchase_date">Purchase date</label><br/>
+5: <%=select %>
+6: <%= date_select 'mutual_fund_investment', 'purchase_date'  %></p>
+7: <!--[eoform:mutual_fund_investment]-->
+8: 
+
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/_form.rhtml:5:in `select'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/_form.rhtml:5:in `_run_rhtml_47app47views47mutual_fund_investment47_form46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:287:in `render'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:4:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `capture_erb_with_buffer'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:67:in `capture'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/form_tag_helper.rb:51:in `form_tag'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:3:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:806:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:711:in `render_with_no_layout'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1096:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:21:48) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 200 OK [http://localhost/mutual_fund_investment/new]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:22:40) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+
+
+ActionView::TemplateError (undefined method `stringify_keys' for ["a", "b"]:Array) on line #5 of app/views/mutual_fund_investment/_form.rhtml:
+2: 
+3: <!--[form:mutual_fund_investment]-->
+4: <p><label for="mutual_fund_investment_mutual_fund">Mutual Fund</label><br/>
+5: <%=select_tag 'mutual_fund_investment', 'purchase_date', ["a", "b"]%></p>
+6: <p><label for="mutual_fund_investment_purchase_date">Purchase date</label><br/>
+7: <%= date_select 'mutual_fund_investment', 'purchase_date'  %></p>
+8: <!--[eoform:mutual_fund_investment]-->
+
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/form_tag_helper.rb:82:in `select_tag'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/_form.rhtml:5:in `_run_rhtml_47app47views47mutual_fund_investment47_form46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:287:in `render'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:4:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `capture_erb_with_buffer'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:67:in `capture'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/form_tag_helper.rb:51:in `form_tag'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:3:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:806:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:711:in `render_with_no_layout'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1096:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:23:09) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01600 (51%) | DB: 0.00000 (0%) | 200 OK [http://localhost/mutual_fund_investment/new]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:23:25) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/mutual_fund_investment/new]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:26:32) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 200 OK [http://localhost/mutual_fund_investment/new]
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:28:04) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.000000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+
+
+ActionView::TemplateError (undefined local variable or method `options' for #<#<Class:0x48e55f4>:0x48e55cc>) on line #5 of app/views/mutual_fund_investment/_form.rhtml:
+2: 
+3: <!--[form:mutual_fund_investment]-->
+4: <p><label for="mutual_fund_investment_mutual_fund">Mutual Fund</label><br/>
+5: <%=select_tag 'mutual_fund_investment', options => {"a"=> "b", "b"=>"c"}%></p>
+6: <p><label for="mutual_fund_investment_purchase_date">Purchase date</label><br/>
+7: <%= date_select 'mutual_fund_investment', 'purchase_date'  %></p>
+8: <!--[eoform:mutual_fund_investment]-->
+
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/_form.rhtml:5:in `_run_rhtml_47app47views47mutual_fund_investment47_form46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:287:in `render'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:4:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `capture_erb_with_buffer'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:67:in `capture'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/form_tag_helper.rb:51:in `form_tag'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:3:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:806:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:711:in `render_with_no_layout'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1096:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:28:14) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;36;1mMutualFundInvestment Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+
+
+ActionView::TemplateError (undefined local variable or method `options_tag' for #<#<Class:0x4895180>:0x4895158>) on line #5 of app/views/mutual_fund_investment/_form.rhtml:
+2: 
+3: <!--[form:mutual_fund_investment]-->
+4: <p><label for="mutual_fund_investment_mutual_fund">Mutual Fund</label><br/>
+5: <%=select_tag 'mutual_fund_investment', options_tag => {"a"=> "b", "b"=>"c"}%></p>
+6: <p><label for="mutual_fund_investment_purchase_date">Purchase date</label><br/>
+7: <%= date_select 'mutual_fund_investment', 'purchase_date'  %></p>
+8: <!--[eoform:mutual_fund_investment]-->
+
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/_form.rhtml:5:in `_run_rhtml_47app47views47mutual_fund_investment47_form46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:287:in `render'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:4:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:108:in `capture_erb_with_buffer'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/capture_helper.rb:67:in `capture'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/helpers/form_tag_helper.rb:51:in `form_tag'
+    #{RAILS_ROOT}/app/views/mutual_fund_investment/new.rhtml:3:in `_run_rhtml_47app47views47mutual_fund_investment47new46rhtml'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:806:in `render_file'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:711:in `render_with_no_layout'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1096:in `perform_action_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering c:/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing MutualFundInvestmentController#new (for 127.0.0.1 at 2007-09-29 19:31:22) [GET]
+  Session ID: 00f12eb491dd711dd10ba14f20ae2379
+  Parameters: {"action"=>"new", "controller"=>"mutual_fund_investment"}
+  [4;35;1mMutualFundInvestment Columns (0.015000)[0m   [0mSHOW FIELDS FROM mutual_fund_investments[0m
+Rendering  within layouts/mutual_fund_investment
+Rendering mutual_fund_investment/new
+Rendered mutual_fund_investment/_form (0.00000)
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (100%) | 200 OK [http://localhost/mutual_fund_investment/new]

@@ -1,0 +1,36 @@
+<div style="float:right">
+    <%= button_to "Update Data", :action => "update_data" %>
+</div>
+
+<table>
+    <tr>
+        <th>Investment</th>
+        <th>Current Value</th>
+    </tr>
+    <% for investment in @investments
+        attributes = investment.attributes %>
+        <tr>
+            <td><%= link_to_remote attributes[:name],  :url => attributes[:params], :update => "investment_details" %></td>
+            <td class="numeric"><%= attributes[:value] %></td>
+        </tr>
+    <% end %>
+    <tr>
+        <td><b>Total</b></td>
+        <td class="numeric"><%= @total_amount %></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+        <td>Liquid Amount</td>
+        <td><%= @liquid_amount%></td>
+    </tr>
+    <tr>
+        <td>Liquidity Ratio</td>
+        <td><%= number_to_percentage(@liquid_amount / @total_amount * 100)  %></td>
+    </tr>
+    <tr>
+        <td>Equity Ratio</td>
+        <td><%= number_to_percentage(@equity_amount / @total_amount * 100)  %></td>
+    </tr>
+</table>
+
+<div id="investment_details"/>

@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+home:
+  id: 1
+  mutual_fund_id: 4
+  start_date: 2007-10-01
+  sip_amount: 1000
+  units: 300
+  current_value: 4650.45
+vacation:
+  id: 2
+  mutual_fund_id: 5
+  start_date: 2006-10-01
+  sip_amount: 500
+  units: 57.12
+  current_value: 14612.45
+
